@@ -13,6 +13,7 @@ module.exports = {
     ecmaVersion: 2018
   },
   rules: {
-    quotes: ["error", "double"]
+    quotes: ["error", "double"],
+    "comma-dangle": 0
   }
 };
