@@ -6,7 +6,7 @@ const app = express();
 
 if (process.env.ENV === "Test") {
   console.log("This is a test");
-  const db = mongoose.connect("mondodb://localhost/bookAPI_Test", { useNewUrlParser: true, useUnifiedTopology: true });
+  const db = mongoose.connect("mongodb://localhost/bookAPI_Test", { useNewUrlParser: true, useUnifiedTopology: true });
 } else {
   console.log("This is for real");
   const db = mongoose.connect("mongodb://localhost/bookAPI", { useNewUrlParser: true, useUnifiedTopology: true }); // eslint-disable-line no-unused-vars
